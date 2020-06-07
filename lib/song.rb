@@ -36,6 +36,10 @@ class Song
       did_i_find_it
     end
   end
+  
+  def self.alphabetical
+    self.all.sort_by { |x| x.name}
+  end
       
 
   def self.all
