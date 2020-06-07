@@ -9,6 +9,11 @@ class Song
   end
   
   def self.new_by_name
+    s = self.new 
+    s.name = string_name_of_song 
+    s.save
+    s
+  end
 
   def self.all
     @@all
