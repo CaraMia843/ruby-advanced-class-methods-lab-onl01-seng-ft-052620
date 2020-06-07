@@ -20,6 +20,10 @@ class Song
     s.name = string_name_of_song 
     s
   end
+  
+  def self.find_by_name(string_name_of_song)
+    self.all.detect {|x| x.name == string_name_of_song
+  end
 
   def self.all
     @@all
