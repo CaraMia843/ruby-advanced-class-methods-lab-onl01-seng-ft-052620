@@ -32,7 +32,10 @@ class Song
       s.name = find_song
       s.save
       s
+    else
+      did_i_find_it
     end
+  end
       
 
   def self.all
